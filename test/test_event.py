@@ -1,8 +1,8 @@
 import unittest
 import time
 import datetime
-from event import Untiltime
-from event.utils import complete_datetime
+from date_time_event import Untiltime
+from date_time_event.utils import complete_datetime
 
 
 class Test_complete_datetime(unittest.TestCase):
