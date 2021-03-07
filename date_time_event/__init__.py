@@ -1,5 +1,6 @@
 import threading
-from event.utils import convert_datetime_secs, complete_datetime
+from date_time_event.utils import (convert_datetime_secs,
+                                   complete_datetime)
 
 
 class Untiltime(threading.Thread):

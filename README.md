@@ -34,7 +34,7 @@ The `Untiltime` class is threaded based timer which will wait till the given dat
 
 ```python
 from datetime import datetime, timedelta
-from event import Untiltime
+from date_time_event import Untiltime
 
 # Current datetime with 5 seconds in future.
 date = datetime.now() + timedelta(0, 5)
@@ -66,7 +66,7 @@ The `Untiltime` class can also be used as thread class. Like so
 
 ```python
 from datetime import datetime, timedelta
-from event import Untiltime
+from date_time_event import Untiltime
 
 def function():
     print('Hello! Its time!', datetime.now())
@@ -87,7 +87,7 @@ Once the thread is called it can be stopped or cancel if called `.cancel()` meth
 
 ```python
 from datetime import datetime, timedelta
-from event import Untiltime
+from date_time_event import Untiltime
 
 def function():
     print('Hello! Its time!', datetime.now())
