@@ -7,7 +7,10 @@ from event import Untiltime
 class TestUntiltimeDecorator(unittest.TestCase):
 
     date = datetime.datetime.now()
-    date_test = datetime.time(date.hour, date.minute, date.second + 5)
+    sec = date.second + 5
+    if sec > 60: 
+        sec = 5
+    date_test = datetime.time(date.hour, date.minute, sec)
 
     # Class functions
     @Untiltime(join=True)
@@ -82,8 +85,11 @@ class TestUntiltimeDecorator(unittest.TestCase):
 
     def test_date(self):
         date = datetime.datetime.now()
+        sec = date.second + 5
+        if sec > 60:
+            sec = 5
         date_test = datetime.time(
-            date.hour, date.minute, date.second + 5)
+            date.hour, date.minute, sec)
 
         # Date with join set to True.
         @Untiltime(dateOrtime=date_test, join=True)
@@ -101,8 +107,11 @@ class TestUntiltimeDecorator(unittest.TestCase):
 
     def test_date_accuracy(self):
         date = datetime.datetime.now()
+        sec = date.second + 5
+        if sec > 60:
+            sec = 5
         date_test = datetime.time(
-            date.hour, date.minute, date.second + 2)
+            date.hour, date.minute, sec)
 
         @Untiltime(dateOrtime=date_test, join=True)
         def _date_acc():
