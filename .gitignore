@@ -19,3 +19,6 @@ htmlcov/style.css
 .gitignore
 event/__pycache__/__init__.cpython-38.pyc
 event/__pycache__/utils.cpython-38.pyc
+rough.py
+.coverage
+htmlcov/
