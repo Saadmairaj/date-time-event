@@ -8,7 +8,6 @@ class Untiltime(threading.Thread):
                  join=False, group=None, daemon=False, *args, **kwargs):
 
         super().__init__(daemon=daemon, name=name, group=group)
-        print(args, kwargs, function)
         self._date = dateOrtime  # if dateOrtime is not None else 0
         self._join = join
         self.function = function
@@ -19,7 +18,7 @@ class Untiltime(threading.Thread):
 
     def __call__(self, *args, **kwargs):
         args = list(args)
-        print('call', args, kwargs, self.function)
+
         def _start(*ags, **kw):
             """Internal function."""
             self.args = ags or self.args
@@ -30,7 +29,6 @@ class Untiltime(threading.Thread):
         fn = args.pop(0) if args and args[0] else None
         if (fn is not None and not callable(self.function) and callable(fn)):
             self.function = fn
-            print('Here')
             return _start
         return _start(*args, **kwargs)
 
@@ -62,7 +60,7 @@ class Untiltime(threading.Thread):
 
     def cancel(self):
         """Stop the timer if it hasn't finished yet."""
-        self.finished.set()
+        return self.finished.set()
 
     def run(self):
         """Method representing the thread's activity.
@@ -71,7 +69,7 @@ class Untiltime(threading.Thread):
         invokes the callable object passed to the object's constructor as the
         target argument, if any, with sequential and keyword arguments taken
         from the args and kwargs arguments, respectively.
-        
+
         """
         if self.date:
             self.finished.wait(convert_datetime_secs(self.date))
@@ -89,19 +87,3 @@ class Untiltime(threading.Thread):
         """
         if self.finished.is_set() and self._return_value is not None:
             return self._return_value
-
-
-if "__main__" == __name__:
-    import datetime
-
-    date = datetime.time(13, 9, 30)
-
-    @Untiltime(dateOrtime=date)
-    def test_function(x):
-        print('Test function ran fine! Arg: ', x)
-        return x*3
-
-    # th = Untiltime(test_function, date, kwargs=dict(x='Hello'), join=True)
-    # th.start()
-    print(test_function('Hello'))
-    print('Done')
