@@ -1,4 +1,6 @@
 # date-time-event
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/ee305868a6a044c281f9423102f8480e)](https://www.codacy.com/gh/Saadmairaj/date-time-event/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Saadmairaj/date-time-event&utm_campaign=Badge_Coverage)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event?ref=badge_small)
 
 A very simple package to trigger events at a specific DateTime.
 
