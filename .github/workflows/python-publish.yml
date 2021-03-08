@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel twine flaske8 pytest
+        pip install wheel setuptools twine flake8 pytest
       
     # Checking for Python syntax errors beofre uploading to pypi
     - name: Lint with flake8
