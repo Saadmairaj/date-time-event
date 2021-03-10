@@ -22,3 +22,9 @@ event/__pycache__/utils.cpython-38.pyc
 rough.py
 .coverage
 htmlcov/
+build
+date_time_event.egg-info
+dist
+coverage.xml
+.gitignore
+index.xml
