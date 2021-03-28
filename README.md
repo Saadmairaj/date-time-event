@@ -1,5 +1,5 @@
 # date-time-event
-![PyPI](https://img.shields.io/pypi/v/date-time-event?color=dark)
+[![PyPI](https://img.shields.io/pypi/v/date-time-event?color=dark)](https://pypi.org/project/date-time-event/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ee305868a6a044c281f9423102f8480e)](https://www.codacy.com/gh/Saadmairaj/date-time-event/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Saadmairaj/date-time-event&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/ee305868a6a044c281f9423102f8480e)](https://www.codacy.com/gh/Saadmairaj/date-time-event/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Saadmairaj/date-time-event&utm_campaign=Badge_Coverage)
 [![Downloads](https://static.pepy.tech/personalized-badge/date-time-event?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/date-time-event)
