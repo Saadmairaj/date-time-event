@@ -2,7 +2,7 @@
 [![PyPI](https://img.shields.io/pypi/v/date-time-event?color=dark)](https://pypi.org/project/date-time-event/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ee305868a6a044c281f9423102f8480e)](https://www.codacy.com/gh/Saadmairaj/date-time-event/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Saadmairaj/date-time-event&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/ee305868a6a044c281f9423102f8480e)](https://www.codacy.com/gh/Saadmairaj/date-time-event/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Saadmairaj/date-time-event&utm_campaign=Badge_Coverage)
-[![Downloads](https://static.pepy.tech/personalized-badge/date-time-event?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/date-time-event)
+[![Downloads](https://static.pepy.tech/personalized-badge/date-time-event?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads)](https://pepy.tech/project/date-time-event)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSaadmairaj%2Fdate-time-event&count_bg=%238EE74A&title_bg=%23555555&icon=python.svg&icon_color=%239A9A9A&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event?ref=badge_small)
 
