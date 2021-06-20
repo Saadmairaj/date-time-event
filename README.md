@@ -91,24 +91,24 @@ Once the thread is called it can be stopped or cancel if called `.cancel()` meth
 
 - Set date can be changed with property `date`, if the thread has not started.
 
-```python
-from datetime import datetime, timedelta
-from date_time_event import Untiltime
+    ```python
+    from datetime import datetime, timedelta
+    from date_time_event import Untiltime
 
-def function():
-    print('Hello! Its time!', datetime.now())
+    def function():
+        print('Hello! Its time!', datetime.now())
 
 
-# Current datetime with 5 seconds in future.
-date = datetime.now() + timedelta(0, 1)
+    # Current datetime with 2 seconds in future.
+    date = datetime.now() + timedelta(0, 2)
 
-th = Untiltime(function, dateOrtime=date)
-# Initializing new date
-th.date = datetime.now() + timedelta(0, 5)
-th.start()
+    th = Untiltime(function, dateOrtime=date)
+    # Initializing new date with 5 seconds in future
+    th.date = datetime.now() + timedelta(0, 5)
+    th.start()
 
-print('Function will be call at: %s \n' % th.date)
-```
+    print('Function will be call at: %s \n' % th.date)
+    ```
 
 ## [License](https://github.com/Saadmairaj/date-time-event/blob/master/LICENSE)
 
