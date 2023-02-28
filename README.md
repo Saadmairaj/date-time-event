@@ -110,6 +110,6 @@ Once the thread is called it can be stopped or cancel if called `.cancel()` meth
     print('Function will be call at: %s \n' % th.date)
     ```
 
-## [License](https://github.com/Saadmairaj/date-time-event/blob/master/LICENSE)
+## [License](https://github.com/Saadmairaj/date-time-event/blob/master/LICENSE) 
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSaadmairaj%2Fdate-time-event?ref=badge_large)
